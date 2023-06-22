@@ -21,7 +21,7 @@
         echo "<script type='text/javascript'>
         alert('Verifica el captcha'); window.location='index.php';
         </script>";
-    //En caso que la variable $atributos indica true, se procede con el registro del usuario    
+    //En caso de que la variable $atributos indica true, se procede con el registro del usuario    
     } else {
         //Manejaremos la siguiente sentencia SQL para insertar los datos a la tabla
         $query = "INSERT INTO tabla_users (username, email, pswd, estatus) VALUES ('$user', '$email', '$psw', 1)";

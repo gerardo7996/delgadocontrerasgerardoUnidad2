@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags requeridos del sitio -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título del sitio -->
     <title>Mi Catálogo - Cambio de Contraseña</title>
     <!-- Favicon del sitio -->
 	<link rel="icon" href="img/new-pswd.png" alt="favicon">

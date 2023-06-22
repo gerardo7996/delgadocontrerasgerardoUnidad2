@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Título del sitio -->
-    <title>Cadena de conexión a MySQL</title>
+    <title>Mi Catálogo - Cadena de conexión a MySQL</title>
     <!-- Favicon del sitio -->
     <link rel="icon" href="img/base-de-datos.png" alt="favicon">
     <!-- Bootstrap 5.3.0 CSS -->
@@ -24,16 +24,12 @@
 
         //Utilizaremos el método de conexión mysqli para realizar la conexión a la base de datos local
 	    $conector = new mysqli($dbhost,$dbuser,$dbpswd,$dbname);
-        //Despúes, vamos a verificar que la conexión funcione correctamente
+        //Después, vamos a verificar que la conexión funcione correctamente
         if ($conector->connect_errno) {
             //Si la conexión tuvo un problema, mostraremos el siguiente mensaje
 	    	echo "<h4 align='center' style='font-size:23px; margin-top:15px; margin-bottom:15px;'><strong>Lo sentimos, la conexión a la base de datos falló</strong></h4>";
 	    	echo "<h5 align='center' style='font-size:23px; margin-top:15px; margin-bottom:15px;'><strong>Verifica tus credenciales de conexión</strong></h5>";
 	    	echo "<center><img src='img/icono-tache.png' width='320px'></center><br>";
-        } else {
-            //Si la conexión se realizó corectamente, mostraremos el siguiente mensaje
-            echo "<h4 align='center' style='font-size:23px; margin-top:15px; margin-bottom:15px;'><strong>La base de datos se conectó correctamente</strong></h4>";
-            echo "<center><img src='img/db-success.png' width='320px'></center><br>";
         }
     ?>
     <!-- Bootstrap 5.3.0 JavaScript -->
